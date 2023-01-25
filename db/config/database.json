@@ -1,8 +1,8 @@
 {
   "development": {
-    "username": "Vas",
-    "password": "VasVas",
-    "database": "photo",
+    "username": "Pavel",
+    "password": "qwer1234",
+    "database": "PhotoProject",
     "host": "127.0.0.1",
     "dialect": "postgres"
   },
