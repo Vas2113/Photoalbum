@@ -8,7 +8,7 @@ module.exports = function Layout({ title, children }) {
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="/css/style.css" />
-        <script defer src="app.js" />
+        <script defer src="/js/client.js" />
         <title>{title}</title>
       </head>
       <body>

@@ -2,15 +2,19 @@ const React = require('react');
 // const Log = require('./Log');
 // const Reg = require('./Reg');
 
-module.exports = function Navigation({user}) {
+module.exports = function Navigation() {
   return (
     <div className="navi">
-      <div className="reg">
-        Sign UP
-      </div>
-      <div className="log">
-        Sign IN
-      </div>
+      <a href="/reg">
+        <div className="reg">
+          Регистрация
+        </div>
+      </a>
+      <a href="/log">
+        <div className="log">
+          Логинизация
+        </div>
+      </a>
     </div>
   );
 };

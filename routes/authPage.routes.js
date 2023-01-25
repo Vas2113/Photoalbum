@@ -8,6 +8,10 @@ router.get('/', (req, res) => {
   res.renderComponent(Start);
 });
 
+router.get('/reg', (req, res) => {
+  res.renderComponent(Reg);
+});
+
 router.post('/reg', async (req, res) => {
   const {
     login, email, password1, passwordRepeat,
