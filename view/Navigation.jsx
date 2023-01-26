@@ -3,7 +3,7 @@ const React = require("react");
 // const Reg = require('./Reg');
 
 module.exports = function Navigation({ user }) {
-  console.log(user, "useeeeeeeeeeeeeer");
+  
   return (
     <>
       {" "}
@@ -19,10 +19,10 @@ module.exports = function Navigation({ user }) {
       ) : (
         <div className="exit">
           <div className="myAlbum">
-            <a href="/main">Мои альбомы</a>
+            <a href="/myAlbums">Мои альбомы</a>
           </div>
           <div className="allAlbum">
-            <a href="/">Все доступные альбомы</a>
+            <a href="/main">Все доступные альбомы</a>
           </div>
           <div className="logout">
             <a href="/logout">Выйти</a>
