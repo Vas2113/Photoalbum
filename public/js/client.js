@@ -34,9 +34,9 @@ const logForm = document.querySelector('#loginForm');
 if (logForm) {
   logForm.addEventListener('submit', async (e) => {
     e.preventDefault();
-    // console.log(e.target.email.value);
+    console.log(e.target.email.value);
     const { email, password, method } = e.target;
-    const res = await fetch('/auth', {
+    const res = await fetch('/log', {
       method,
       headers: { 'Content-type': 'application/json' },
       body: JSON.stringify({
@@ -45,13 +45,12 @@ if (logForm) {
       }),
     });
     const data = await res.json();
-
     if (!data.status) {
       const errorBlock = document.querySelector('.errorBlock');
       errorBlock.innerHTML = data.message;
       errorBlock.style.visibility = 'visible';
     } else {
-      window.location.assign('/');
+      window.location.assign('/main');
     }
   });
 }
