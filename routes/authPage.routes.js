@@ -4,6 +4,8 @@ const Start = require('../view/Start');
 const Log = require('../view/Log');
 const Reg = require('../view/Reg');
 
+const { User } = require('../db/models');
+
 router.get('/', (req, res) => {
   res.renderComponent(Start);
 });
@@ -30,10 +32,10 @@ router.post('/reg', async (req, res) => {
     if (user) {
       return res.status(400).json({ message: 'Пользователь с таким e-mail уже зарегистрирован!', status: false });
     }
-    const points = 0;
+
     const password = await bcrypt.hash(password1, 10);
     const newUser = await User.create({
-      login, email, password, points,
+      login, email, password,
     });
 
     req.session.user_id = newUser.id;
@@ -47,7 +49,7 @@ router.get('/log', (req, res) => {
   res.renderComponent(Log);
 });
 
-router.delete('/logOut').get((req, res) => {
+router.route('/logout').get((req, res) => {
   req.session.destroy((error) => {
     if (error) {
       return res.status(500).json({ message: 'Ошибка удаления сессии' });

@@ -23,7 +23,7 @@ if (regForm) {
       errorBlock.innerHTML = data.message;
       errorBlock.style.visibility = 'visible';
     } else {
-      window.location.assign('/');
+      window.location.assign('/main');
     }
   });
 }

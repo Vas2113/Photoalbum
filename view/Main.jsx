@@ -2,28 +2,37 @@ const React = require('react');
 const Layout = require('./Layout');
 // const Navigation = require('./Navigation');
 
-function Main({ title, name, topics }) {
-  return name ? (
-    <Layout title={title} name={name}>
-      <div className="container">
-        <h1 className="main__title">Квиз</h1>
-        <a href="/topics">
-          <div className="enter">Играть!</div>
-        </a>
-
+function Main({ title, user }) {
+  return (
+    <Layout title={title} user={user}>
+      <div className="allAlboms">
+        {user && <h1>Привет, {user.login}</h1>}
+        <div className="albCard">
+          <img className="albumPhoto" src="img/1.jpg" />
+          <h6>Описание альбома</h6>
+        </div>
+        <div className="albCard">
+          <img className="albumPhoto" src="img/1.jpg" />
+          <h6>Описание альбома</h6>
+        </div>
+        <div className="albCard">
+          <img className="albumPhoto" src="img/1.jpg" />
+          <h6>Описание альбома</h6>
+        </div>
+        <div className="albCard">
+          <img className="albumPhoto" src="img/1.jpg" />
+          <h6>Описание альбома</h6>
+        </div>
+        <div className="albCard">
+          <img className="albumPhoto" src="img/1.jpg" />
+          <h6>Описание альбома</h6>
+        </div>
+        <div className="albCard">
+          <img className="albumPhoto" src="img/1.jpg" />
+          <h6>Описание альбома</h6>
+        </div>
       </div>
-    </Layout>
-  ) : (
-    <Layout title={title} name={name} topics={topics}>
-      <div className="container">
-        <h1 className="main__title">
-          Необходимо зарегистрироваться или авторизироваться, чтобы играть!
-        </h1>
-        <a href="/reg">
-          <div className="enter">Зарегистрироваться!</div>
-        </a>
 
-      </div>
     </Layout>
   );
 }
