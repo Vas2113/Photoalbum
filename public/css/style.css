@@ -42,7 +42,6 @@ a {
   align-items: center;
 }
 
-
 .albumPhoto {
   border-radius: 10px;
   /* object-fit: cover; */
@@ -55,10 +54,17 @@ a {
   display: flex;
   justify-content: right;
   padding: 1%;
+  display: flex;
+  justify-content: center;
 }
 
 .albCard {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.myAlbum,
+.allAlbum,
+.logout {
+  margin: 20px;
 }
