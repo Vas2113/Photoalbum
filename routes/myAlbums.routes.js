@@ -7,8 +7,7 @@ router.get('/', async (req, res) => {
     const { userId } = req.session;
     const user = await User.findByPk(userId);
     const albums = await Album.findAll({ where: { user_id: userId } });
-    const photos = await
-    res.renderComponent(MyAlbums, { title: 'MyAlbums', albums });
+    const photos = await res.renderComponent(MyAlbums, { title: 'MyAlbums', albums });
   } catch (error) {
     res.status(500).json({ error: error.message });
   }

@@ -3,7 +3,7 @@ const React = require('react');
 // const Reg = require('./Reg');
 
 module.exports = function Navigation({ user }) {
-console.log(user,'useeeeeeeeeeeeeer')
+  console.log(user, 'useeeeeeeeeeeeeer');
   return (
     <>
       {' '}
