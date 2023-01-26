@@ -3,33 +3,31 @@ const React = require('react');
 // const Reg = require('./Reg');
 
 module.exports = function Navigation({ user }) {
+console.log(user,'useeeeeeeeeeeeeer')
   return (
     <>
       {' '}
       {
         !user ? (
           <div className="navi">
-            <a href="/reg">
-              <div className="reg">
+            <div className="reg">
+              <a href="/reg">
                 Регистрация
-              </div>
-            </a>
-            <a href="/log">
-              <div className="log">
+              </a>
+            </div>
+            <div className="log">
+              <a href="/log">
                 Логинизация
-              </div>
+              </a>
+            </div>
+          </div>
+        ) : (
+          <div className="exit">
+            <a href="/logout">
+              Выйти
             </a>
           </div>
         )
-          : (
-
-            <a href="/logout">
-
-              Выйти
-
-            </a>
-          )
-
       }
     </>
   );
