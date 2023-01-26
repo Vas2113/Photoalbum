@@ -3,28 +3,145 @@ module.exports = {
   async up(queryInterface, Sequelize) {
     const photo = [
       {
-        photoname: 'KGBT',
+        photoname: "Закат1",
         photo:
-          'https://i1.mybook.io/p/x756/book_covers/85/65/8565f9aa-1fbb-49f9-9e16-43a7ff324b9a.jpg',
+          "https://img.freepik.com/free-vector/tropical-landscape-with-ocean-and-sunset_107791-2244.jpg",
         album_id: 1,
       },
       {
-        photoname: 'Однажды в Голливуде',
-        photo:
-          'https://i2.mybook.io/p/x756/book_covers/e8/a2/e8a2bc52-06db-449a-adba-c431468bc6cf.jpg',
+        photoname: "Закат2",
+        photo: "https://beautifoto.ru/wp-content/uploads/2019/08/1.jpg",
         album_id: 1,
       },
       {
-        photoname: 'Фабрика прозы: записки наладчика',
+        photoname: "Закат3",
         photo:
-          'https://i3.mybook.io/p/x756/book_covers/fc/08/fc08da6c-4f87-4311-bc3a-d192f0f7fc47.jpg',
+          "https://blocknotfotografa.ru/wp-content/uploads/2017/10/6694.jpg",
+        album_id: 1,
+      },
+      {
+        photoname: "Горы",
+        photo:
+          "https://phonoteka.org/uploads/posts/2021-04/1617804979_9-p-gori-fon-9.jpg",
         album_id: 2,
       },
       {
-        photoname: 'Галлант',
+        photoname: "Море",
         photo:
-          'https://i2.mybook.io/p/x756/book_covers/1a/4a/1a4aad47-5f95-4dc5-bdbd-3499c3d12e27.jpg',
-        album_id: 2,
+          "https://sochi.scapp.ru/wp-content/uploads/post/2020/01/black-sea_obl.jpg",
+        album_id: 3,
+      },
+      {
+        photoname: "Пляж",
+        photo:
+          "https://kuku.travel/wp-content/uploads/2017/12/saloniki-more-plyazhi-i-kurorty-ryadom-5.jpg",
+        album_id: 4,
+      },
+      {
+        photoname: "Пляж",
+        photo: "https://of-crimea.ru/plug/Peschanye-plyazhi-Kryma.jpg",
+        album_id: 4,
+      },
+      {
+        photoname: "Игры",
+        photo:
+          "https://i2.mybook.io/p/x756/book_covers/1a/4a/1a4aad47-5f95-4dc5-bdbd-3499c3d12e27.jpg",
+        album_id: 5,
+      },
+      {
+        photoname: "Игры",
+        photo:
+          "https://img1.akspic.ru/previews/6/8/5/8/6/168586/168586-pabg_silverbek-pubg-playstation_5-playstation_4-igrushka-500x.jpg",
+        album_id: 5,
+      },
+      {
+        photoname: "Игры",
+        photo:
+          "https://img1.akspic.ru/previews/6/8/5/8/6/168586/168586-pabg_silverbek-pubg-playstation_5-playstation_4-igrushka-500x.jpg",
+        album_id: 5,
+      },
+      {
+        photoname: "Галлант",
+        photo: "https://ichip.ru/blobimgs/uploads/2019/06/surf.jpg",
+        album_id: 5,
+      },
+      {
+        photoname: "Небо",
+        photo:
+          "https://cdn.lifehacker.ru/wp-content/uploads/2017/03/bluesky_1488891825.jpg",
+        album_id: 6,
+      },
+      {
+        photoname: "Небо",
+        photo:
+          "https://cdn.lifehacker.ru/wp-content/uploads/2017/03/bluesky_1488891825.jpg",
+        album_id: 6,
+      },
+      {
+        photoname: "Небо",
+        photo:
+          "https://cdn.lifehacker.ru/wp-content/uploads/2017/03/bluesky_1488891825.jpg",
+        album_id: 6,
+      },
+      {
+        photoname: "Небо",
+        photo:
+          "https://cdn.lifehacker.ru/wp-content/uploads/2017/03/bluesky_1488891825.jpg",
+        album_id: 6,
+      },
+      {
+        photoname: "Небо",
+        photo:
+          "https://cdn.lifehacker.ru/wp-content/uploads/2017/03/bluesky_1488891825.jpg",
+        album_id: 6,
+      },
+      {
+        photoname: "Небо",
+        photo:
+          "https://cdn.lifehacker.ru/wp-content/uploads/2017/03/bluesky_1488891825.jpg",
+        album_id: 6,
+      },
+      {
+        photoname: "Небо",
+        photo:
+          "https://cdn.lifehacker.ru/wp-content/uploads/2017/03/bluesky_1488891825.jpg",
+        album_id: 6,
+      },
+      {
+        photoname: "Небо",
+        photo:
+          "https://cdn.lifehacker.ru/wp-content/uploads/2017/03/bluesky_1488891825.jpg",
+        album_id: 6,
+      },
+      {
+        photoname: "Небо",
+        photo:
+          "https://cdn.lifehacker.ru/wp-content/uploads/2017/03/bluesky_1488891825.jpg",
+        album_id: 6,
+      },
+      {
+        photoname: "Небо",
+        photo:
+          "https://cdn.lifehacker.ru/wp-content/uploads/2017/03/bluesky_1488891825.jpg",
+        album_id: 7,
+      },
+      {
+        photoname: "Небо",
+        photo:
+          "https://i2.mybook.io/p/x756/book_covers/1a/4a/1a4aad47-5f95-4dc5-bdbd-3499c3d12e27.jpg",
+        album_id: 7,
+      },
+      {
+        photoname: "Галлант",
+        photo:
+          "https://i2.mybook.io/p/x756/book_covers/1a/4a/1a4aad47-5f95-4dc5-bdbd-3499c3d12e27.jpg",
+        album_id: 7,
+      },
+      {
+        photoname: "Галлант",
+        photo:
+          "https://i2.mybook.io/p/x756/book_covers/1a/4a/1a4aad47-5f95-4dc5-bdbd-3499c3d12e27.jpg",
+        album_id: 7,
       },
     ];
     const addTimeStamps = (item) => ({
@@ -33,10 +150,10 @@ module.exports = {
       updatedAt: new Date(),
     });
 
-    await queryInterface.bulkInsert('Photos', photo.map(addTimeStamps));
+    await queryInterface.bulkInsert("Photos", photo.map(addTimeStamps));
   },
 
   async down(queryInterface, Sequelize) {
-    await queryInterface.bulkDelete('Photos');
+    await queryInterface.bulkDelete("Photos");
   },
 };

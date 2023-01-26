@@ -3,15 +3,45 @@ module.exports = {
   async up(queryInterface) {
     const albums = [
       {
-        title: 'Gavai',
+        title: 'Закат',
         body: 'Хотел бы тут жить?',
         status: true,
         user_id: 1,
       },
       {
-        title: 'Mosco',
+        title: 'Горы',
         body: 'А тут?',
         status: false,
+        user_id: 1,
+      },
+      {
+        title: 'Море',
+        body: 'Хотел бы тут жить?',
+        status: true,
+        user_id: 1,
+      },
+      {
+        title: 'Пляж',
+        body: 'Хотел бы тут жить?',
+        status: true,
+        user_id: 2,
+      },
+      {
+        title: 'Игры',
+        body: 'Хотел бы тут жить?',
+        status: true,
+        user_id: 2,
+      },
+      {
+        title: 'Небо',
+        body: 'Хотел бы тут жить?',
+        status: true,
+        user_id: 2,
+      },
+      {
+        title: 'Животные',
+        body: 'Хотел бы тут жить?',
+        status: true,
         user_id: 2,
       },
     ];
