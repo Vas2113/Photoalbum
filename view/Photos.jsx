@@ -4,13 +4,13 @@ const Layout = require('./Layout');
 const PhotoCard = require('./PhotoCard');
 // const Navigation = require('./Navigation');
 
-function Photos({ title, user, photos }) {
+function Photos({ title, user, photos, id }) {
   console.log(photos, '===========');
   return (
     <Layout title={title} user={user}>
       {
-(user.id === photos[0]['Album.user_id'])
-&& <input className="addPhoto" type="file" multiple data-id={photos[0].album_id} />
+(photos && user.id === photos[0]['Album.user_id'])
+  ? (<input className="addPhoto" type="file" multiple data-id={photos[0].album_id} />) : (<input className="addPhoto" type="file" multiple data-id={id} />)
 
 }
       <div className="allAlbums">

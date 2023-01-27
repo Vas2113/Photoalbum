@@ -2,6 +2,7 @@ const router = require('express').Router();
 const storageFileupload = require('../addPhoto');
 const MyMain = require('../view/MyMain');
 const Photos = require('../view/Photos');
+const MyAlbumcard = require('../view/MyAlbumcard');
 
 const { User, Album, Photo } = require('../db/models');
 
@@ -35,7 +36,11 @@ router.get('/photos/:id', async (req, res) => {
         model: Album, key: 'album_id',
       },
     });
-    res.renderComponent(Photos, { photos });
+    if (photos.length > 0) {
+      res.renderComponent(Photos, { photos });
+    } else {
+      res.renderComponent(Photos, { id });
+    }
   } catch (error) {
     res.status(500).json({ error: error.message });
   }
@@ -53,10 +58,14 @@ router.post('/:id/photos/addPhoto', async (req, res) => {
     );
 
     res.json(newUrl);
-  } catch (e) { console.log(e.message); }
+  } catch (e) { console.log(e.message, '------------------'); }
 });
 
-router.get('/createAlbum', (req, res) => {
-  res.send('new album');
+router.post('/createAlbum', async (req, res) => {
+  const { namenewalbum } = req.body;
+  const id = req.session.user_id;
+  const album = await Album.create({ title: namenewalbum, status: true, user_id: id });
+  // console.log(album);
+  res.text(MyAlbumcard({ album }));
 });
 module.exports = router;

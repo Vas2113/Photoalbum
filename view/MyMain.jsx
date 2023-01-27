@@ -16,6 +16,13 @@ function Main({ title, user, albums }) {
       )}
 
 
+      <form className='addformalbum'>
+        <input name="namenewalbum" type="text" />
+        
+        <button type='submit' className="createnewalbum" >добавить новый альбом</button>
+      </form>
+
+
       <div className="allAlbums">
 
         {albums.map((album) => (
