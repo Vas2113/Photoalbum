@@ -67,7 +67,7 @@ router.post('/:id/photos/addPhoto', async (req, res) => {
     const newUrl = await Promise.all(
       arrUrl.map(async (url) => await Photo.create({ album_id: id, photo: url, photoname: 'name' })),
     );
-  
+
     res.json(newUrl);
   } catch (e) { console.log(e.message); }
 });
