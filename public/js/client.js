@@ -91,7 +91,6 @@ formaddalbum.addEventListener('submit', async (e) => {
   const { namenewalbum } = e.target;
   const res = await fetch('/myAlbums/createAlbum', {
     method: 'POST',
-
     headers: {
       'Content-Type': 'Application/json',
     },
@@ -100,8 +99,10 @@ formaddalbum.addEventListener('submit', async (e) => {
     }),
   });
   const data = await res.text();
-console.log(data);
+  console.log(data);
   const sobaka = document.querySelector('.allAlbums');
-  sobaka.innerHTML = data;
+  const prevAlb = sobaka.innerHTML;
+  sobaka.innerHTML = prevAlb + data;
+  // sobaka.innerHTML = data;
   // console.log(sobaka);
 });

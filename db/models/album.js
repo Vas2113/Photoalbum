@@ -10,7 +10,7 @@ module.exports = (sequelize, DataTypes) => {
   Album.init(
     {
       title: DataTypes.TEXT,
-      body: DataTypes.TEXT,
+      // body: DataTypes.TEXT,
       status: DataTypes.BOOLEAN,
       user_id: {
         type: DataTypes.INTEGER,
