@@ -3,32 +3,32 @@ module.exports = {
   async up(queryInterface) {
     const albums = [
       {
-        title: "Animals",
-        body: "",
+        title: 'Animals',
+        body: '',
         status: true,
         user_id: 1,
       },
       {
-        title: "Eat",
-        body: "А тут?",
+        title: 'Food',
+        body: 'А тут?',
         status: true,
         user_id: 1,
       },
       {
-        title: "People",
-        body: "",
+        title: 'People',
+        body: '',
         status: true,
         user_id: 1,
       },
       {
-        title: "Travel",
-        body: "",
+        title: 'Travel',
+        body: '',
         status: true,
         user_id: 2,
       },
       {
-        title: "Work",
-        body: "",
+        title: 'Work',
+        body: '',
         status: true,
         user_id: 2,
       },
@@ -40,10 +40,10 @@ module.exports = {
       updatedAt: new Date(),
     });
 
-    await queryInterface.bulkInsert("Albums", albums.map(addTimeStamps));
+    await queryInterface.bulkInsert('Albums', albums.map(addTimeStamps));
   },
 
   async down(queryInterface) {
-    await queryInterface.bulkDelete("Albums");
+    await queryInterface.bulkDelete('Albums');
   },
 };

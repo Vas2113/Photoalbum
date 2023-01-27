@@ -15,9 +15,11 @@ module.exports = function Layout({ title, children, user }) {
       </head>
       <body>
         <Navigation user={user} />
-        {children}
+
+        <div className="container">
+          {children}
+        </div>
         <footer>&copy; 2023 </footer>
-        {' '}
 
       </body>
     </html>
