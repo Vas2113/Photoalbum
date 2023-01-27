@@ -17,6 +17,7 @@ router.get('/', async (req, res) => {
     console.log(albums, '++++++++++');
     // res.end()
     res.renderComponent(Main, { title: 'All ALbums', albums });
+    // console.log(xx, '--------------------------------');
   } catch (error) {
     res.status(500).json({ error: error.message });
   }

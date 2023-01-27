@@ -10,11 +10,15 @@ module.exports = function Layout({ title, children, user }) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="/css/style.css" />
         <script defer src="/js/client.js" />
+        <script defer src="/js/application.js" />
         <title>{title}</title>
       </head>
       <body>
         <Navigation user={user} />
         {children}
+        <footer>&copy; 2023 </footer>
+        {' '}
+
       </body>
     </html>
   );

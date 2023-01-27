@@ -159,10 +159,10 @@ module.exports = {
       updatedAt: new Date(),
     });
 
-    await queryInterface.bulkInsert("Photos", photo.map(addTimeStamps));
+    await queryInterface.bulkInsert('Photos', photo.map(addTimeStamps));
   },
 
   async down(queryInterface, Sequelize) {
-    await queryInterface.bulkDelete("Photos");
+    await queryInterface.bulkDelete('Photos');
   },
 };

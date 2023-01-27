@@ -19,6 +19,7 @@ function Main({ title, user, albums }) {
 
         {albums.map((album) => (
           <MyAlbumcard key={album.id} album={album} />
+
         ))}
 
       </div>
