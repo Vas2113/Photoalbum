@@ -13,9 +13,9 @@ function Albumcard({ album }) {
           {album.title}
         </h6>
       </a>
-      <div>
+      {/* <div>
         <a href={`/photo/${album.id}`} className="delete" data-id={album.id}>delete</a>
-      </div>
+      </div> */}
     </div>
 
   );

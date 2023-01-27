@@ -15,11 +15,13 @@ function Main({ title, user, albums }) {
         </h1>
       )}
 
+
       <form className='addformalbum'>
         <input name="namenewalbum" type="text" />
         
         <button type='submit' className="createnewalbum" >добавить новый альбом</button>
       </form>
+
 
       <div className="allAlbums">
 

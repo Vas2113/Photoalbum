@@ -27,6 +27,22 @@ router.get('/', async (req, res) => {
   }
 });
 
+router.delete('/:id', async (req, res) => {
+  const { id } = req.params;
+  try {
+    const result = await Photo.destroy({ where: { album_id: Number(id) } });
+    const result1 = await Album.destroy({ where: { id: Number(id) } });
+    res.json({ status: true });
+  } catch (error) {
+    console.log(error.message);
+  }
+});
+
+// router.delete('/:id', async (req, res) => {
+//   const xx = await Entry.destroy({ where: { id: req.params.id } });
+//   res.json({ key: xx });
+// });
+
 router.get('/photos/:id', async (req, res) => {
   try {
     const { id } = req.params;
