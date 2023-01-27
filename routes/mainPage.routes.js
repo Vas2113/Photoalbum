@@ -3,6 +3,7 @@ const Main = require('../view/Main');
 const Photos = require('../view/Photos');
 
 const { User, Album, Photo } = require('../db/models');
+const ALLPhotos = require('../view/ALLPhotos');
 
 router.get('/', async (req, res) => {
   try {
@@ -30,6 +31,7 @@ router.get('/photos/:id', async (req, res) => {
     const photos = await Photo.findAll({ where: { album_id: +id }, raw: true });
     res.renderComponent(Photos, { photos });
   } catch (error) {
+    console.log(error.message);
     res.status(500).json({ error: error.message });
   }
 });
