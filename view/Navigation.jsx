@@ -1,31 +1,30 @@
-const React = require("react");
+const React = require('react');
 // const Log = require('./Log');
 // const Reg = require('./Reg');
 
 module.exports = function Navigation({ user }) {
-  
   return (
     <>
-      {" "}
+      {' '}
       {!user ? (
         <div className="navi">
           <div className="reg">
-            <a href="/reg">Регистрация</a>
+            <a className="gold" href="/reg">Регистрация</a>
           </div>
           <div className="log">
-            <a href="/log">Логинизация</a>
+            <a className="gold" href="/log">Логинизация</a>
           </div>
         </div>
       ) : (
         <div className="exit">
           <div className="myAlbum">
-            <a href="/myAlbums">Мои альбомы</a>
+            <a className="gold" href="/myAlbums">Мои альбомы</a>
           </div>
           <div className="allAlbum">
-            <a href="/main">Все доступные альбомы</a>
+            <a className="gold" href="/main">Все доступные альбомы</a>
           </div>
           <div className="logout">
-            <a href="/logout">Выйти</a>
+            <a className="gold" href="/logout">Выйти</a>
           </div>
         </div>
       )}
