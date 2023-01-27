@@ -2,6 +2,7 @@ const morgan = require('morgan');
 const session = require('express-session');
 const cookieParser = require('cookie-parser');
 const express = require('express');
+const photoUp = require('express-fileupload');
 const {
   cookiesCleaner, resLocals, getUser,
 } = require('../middleware/auth');
@@ -20,5 +21,6 @@ function configApp(app) {
   app.use(getUser);
   app.use(express.static('public'));
   app.use(ssr);
+  app.use(photoUp());
 }
 module.exports = configApp;

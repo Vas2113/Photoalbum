@@ -14,6 +14,7 @@ function Main({ title, user, albums }) {
           {user?.name}
         </h1>
       )}
+    <a  href='myAlbums/addAlbum'>добавить новый альбом</a>
 
       <div className="allAlbums">
 
