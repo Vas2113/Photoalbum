@@ -3,7 +3,6 @@ const React = require('react');
 
 function myAlbumcard({ album }) {
   return (
-
     <div className="albCard">
       <a href={`/myAlbums/photos/${album.id}`}>
         <img data-id={album.id} className="albumPhoto" src={`${album.Photos[0].photo}`} alt="logo" />

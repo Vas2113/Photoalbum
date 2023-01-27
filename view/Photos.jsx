@@ -5,10 +5,15 @@ const PhotoCard = require('./PhotoCard');
 // const Navigation = require('./Navigation');
 
 function Photos({ title, user, photos }) {
-  // console.log(albums);
+ console.log(photos,'===========')
   return (
     <Layout title={title} user={user}>
+{
+(user.id === photos[0]['Album.user_id'])&& 
+<input className='addPhoto' type="file" multiple data-id={photos[0].album_id} />
 
+
+}
       <div className="allAlbums">
 
         {photos?.map((photo) => (
