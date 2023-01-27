@@ -41,22 +41,6 @@ router.get('/photos/:id', async (req, res) => {
   }
 });
 
-// router.post('/', async (req, res) => {
-//   try {
-//     const { userId } = req.session;
-
-//     const user = await User.findByPk(userId);
-
-//     const { title, body, status } = req.body;
-//     const newAlbum = await Album.create({
-//       title, body, status, user_id: userId,
-//     });
-//     res.renderComponent(UserBook, { newAlbum });
-//   } catch (e) {
-//     res.text(e.message);
-//   }
-// });
-
 router.post('/:id/photos/addPhoto', async (req, res) => {
   const { id } = req.params;
   try {
