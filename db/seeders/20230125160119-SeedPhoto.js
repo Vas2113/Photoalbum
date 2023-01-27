@@ -3,145 +3,154 @@ module.exports = {
   async up(queryInterface, Sequelize) {
     const photo = [
       {
-        photoname: 'Закат1',
-        photo:
-          'https://img.freepik.com/free-vector/tropical-landscape-with-ocean-and-sunset_107791-2244.jpg',
+        photoname: "animals",
+        photo: "/img/animals/brian-breeden-8fkZZw0aWkQ-unsplash.jpg",
         album_id: 1,
       },
       {
-        photoname: 'Закат2',
-        photo: 'https://beautifoto.ru/wp-content/uploads/2019/08/1.jpg',
+        photoname: "ное",
+        photo: "/img/animals/brian-breeden-BzT3VYs8itc-unsplash.jpg",
         album_id: 1,
       },
       {
-        photoname: 'Закат3',
-        photo:
-          'https://blocknotfotografa.ru/wp-content/uploads/2017/10/6694.jpg',
+        photoname: "ИтутЖивотное",
+        photo: "/img/animals/daniel-pelaez-duque-MYzx-jVQ0ek-unsplash.jpg",
         album_id: 1,
       },
       {
-        photoname: 'Горы',
-        photo:
-          'https://phonoteka.org/uploads/posts/2021-04/1617804979_9-p-gori-fon-9.jpg',
+        photoname: "ОпятьЖивотное",
+        photo: "/img/animals/daniel-perunov-EgYXCRk_Siw-unsplash.jpg",
+        album_id: 1,
+      },
+      {
+        photoname: "Животное",
+        photo: "/img/animals/jason-leung-Tb-Uj59U45U-unsplash.jpg",
+        album_id: 1,
+      },
+      {
+        photoname: "Животное",
+        photo: "/img/animals/tony-litvyak-Wc_nye0Vrmc-unsplash.jpg",
+        album_id: 1,
+      },
+      {
+        photoname: "eat",
+        photo: "/img/eat/immo-wegmann-Q5Sm5-UGLiQ-unsplash.jpg",
         album_id: 2,
       },
       {
-        photoname: 'Море',
-        photo:
-          'https://sochi.scapp.ru/wp-content/uploads/post/2020/01/black-sea_obl.jpg',
+        photoname: "eat!",
+        photo: "/img/eat/krunal-lakhatariya-YrmZSEpN_jc-unsplash.jpg",
+        album_id: 2,
+      },
+      {
+        photoname: "eat?",
+        photo: "/img/eat/laura-adai-EVpuANEtz4k-unsplash.jpg",
+        album_id: 2,
+      },
+      {
+        photoname: "eat",
+        photo: "/img/eat/martin-baron-Z7crJXKsSps-unsplash.jpg",
+        album_id: 2,
+      },
+      {
+        photoname: "eattt",
+        photo: "/img/eat/rossella-porta-TvxF-V4NHyM-unsplash.jpg",
+        album_id: 2,
+      },
+      {
+        photoname: "eatTtTt",
+        photo: "/img/eat/winston-tjia-NnJE7rmtijA-unsplash.jpg",
+        album_id: 2,
+      },
+      {
+        photoname: "People",
+        photo: "/img/people/nathan-dumlao-yMhi_YxDejw-unsplash.jpg",
         album_id: 3,
       },
       {
-        photoname: 'Пляж',
-        photo:
-          'https://kuku.travel/wp-content/uploads/2017/12/saloniki-more-plyazhi-i-kurorty-ryadom-5.jpg',
+        photoname: "People",
+        photo: "/img/people/nima-sarram-BwZikcZKx2Q-unsplash.jpg",
+        album_id: 3,
+      },
+      {
+        photoname: "People",
+        photo: "/img/people/nima-sarram-h0KLS0X02CA-unsplash.jpg",
+        album_id: 3,
+      },
+      {
+        photoname: "People",
+        photo: "/img/people/sandro-g-photography-DMYg_m0Acng-unsplash.jpg",
+        album_id: 3,
+      },
+      {
+        photoname: "People!",
+        photo: "/img/people/sandro-g-photography-tUHtxr5zIvQ-unsplash.jpg",
+        album_id: 3,
+      },
+      {
+        photoname: "People?!",
+        photo: "/img/people/sina-rezakhani-soI1MwIEOhQ-unsplash.jpg",
+        album_id: 3,
+      },
+      {
+        photoname: "Travel",
+        photo: "/img/travel/andre-blanco-FwT-vpYCMmE-unsplash.jpg",
         album_id: 4,
       },
       {
-        photoname: 'Пляж',
-        photo: 'https://of-crimea.ru/plug/Peschanye-plyazhi-Kryma.jpg',
+        photoname: "Travel",
+        photo: "/img/travel/armands-brants-QLv--jnWQj8-unsplash.jpg",
         album_id: 4,
       },
       {
-        photoname: 'Игры',
-        photo:
-          'https://i2.mybook.io/p/x756/book_covers/1a/4a/1a4aad47-5f95-4dc5-bdbd-3499c3d12e27.jpg',
+        photoname: "Travel",
+        photo: "/img/travel/artem-korolev-HIczs09rEFQ-unsplash.jpg",
+        album_id: 4,
+      },
+      {
+        photoname: "Travel",
+        photo: "/img/travel/marina-lisova-65aV01f5zJM-unsplash.jpg",
+        album_id: 4,
+      },
+      {
+        photoname: "Travel",
+        photo: "/img/travel/paul-bill-zoS5wX9UyLs-unsplash.jpg",
+        album_id: 4,
+      },
+      {
+        photoname: "Travel",
+        photo: "/img/travel/wendi-stern-5DDmx8ebcq0-unsplash.jpg",
+        album_id: 4,
+      },
+      {
+        photoname: "Work",
+        photo: "/img/work/andrei-stan-7lqVW2LKiak-unsplash.jpg",
         album_id: 5,
       },
       {
-        photoname: 'Игры',
-        photo:
-          'https://img1.akspic.ru/previews/6/8/5/8/6/168586/168586-pabg_silverbek-pubg-playstation_5-playstation_4-igrushka-500x.jpg',
+        photoname: "Work",
+        photo: "/img/work/eric-dekker-zP4_qK9FEQA-unsplash.jpg",
         album_id: 5,
       },
       {
-        photoname: 'Игры',
-        photo:
-          'https://img1.akspic.ru/previews/6/8/5/8/6/168586/168586-pabg_silverbek-pubg-playstation_5-playstation_4-igrushka-500x.jpg',
+        photoname: "Work",
+        photo: "/img/work/markus-spiske-T-t4SGE4aFY-unsplash.jpg",
         album_id: 5,
       },
       {
-        photoname: 'Галлант',
-        photo: 'https://ichip.ru/blobimgs/uploads/2019/06/surf.jpg',
+        photoname: "Work",
+        photo: "/img/work/mina-rad-_D_IzxYaoJM-unsplash.jpg",
         album_id: 5,
       },
       {
-        photoname: 'Небо',
-        photo:
-          'https://cdn.lifehacker.ru/wp-content/uploads/2017/03/bluesky_1488891825.jpg',
-        album_id: 6,
+        photoname: "Work",
+        photo: "/img/work/mina-rad-hLIag4GDeTs-unsplash.jpg",
+        album_id: 5,
       },
       {
-        photoname: 'Небо',
-        photo:
-          'https://cdn.lifehacker.ru/wp-content/uploads/2017/03/bluesky_1488891825.jpg',
-        album_id: 6,
-      },
-      {
-        photoname: 'Небо',
-        photo:
-          'https://cdn.lifehacker.ru/wp-content/uploads/2017/03/bluesky_1488891825.jpg',
-        album_id: 6,
-      },
-      {
-        photoname: 'Небо',
-        photo:
-          'https://cdn.lifehacker.ru/wp-content/uploads/2017/03/bluesky_1488891825.jpg',
-        album_id: 6,
-      },
-      {
-        photoname: 'Небо',
-        photo:
-          'https://cdn.lifehacker.ru/wp-content/uploads/2017/03/bluesky_1488891825.jpg',
-        album_id: 6,
-      },
-      {
-        photoname: 'Небо',
-        photo:
-          'https://cdn.lifehacker.ru/wp-content/uploads/2017/03/bluesky_1488891825.jpg',
-        album_id: 6,
-      },
-      {
-        photoname: 'Небо',
-        photo:
-          'https://cdn.lifehacker.ru/wp-content/uploads/2017/03/bluesky_1488891825.jpg',
-        album_id: 6,
-      },
-      {
-        photoname: 'Небо',
-        photo:
-          'https://cdn.lifehacker.ru/wp-content/uploads/2017/03/bluesky_1488891825.jpg',
-        album_id: 6,
-      },
-      {
-        photoname: 'Небо',
-        photo:
-          'https://cdn.lifehacker.ru/wp-content/uploads/2017/03/bluesky_1488891825.jpg',
-        album_id: 6,
-      },
-      {
-        photoname: 'Небо',
-        photo:
-          'https://cdn.lifehacker.ru/wp-content/uploads/2017/03/bluesky_1488891825.jpg',
-        album_id: 7,
-      },
-      {
-        photoname: 'Небо',
-        photo:
-          'https://i2.mybook.io/p/x756/book_covers/1a/4a/1a4aad47-5f95-4dc5-bdbd-3499c3d12e27.jpg',
-        album_id: 7,
-      },
-      {
-        photoname: 'Галлант',
-        photo:
-          'https://i2.mybook.io/p/x756/book_covers/1a/4a/1a4aad47-5f95-4dc5-bdbd-3499c3d12e27.jpg',
-        album_id: 7,
-      },
-      {
-        photoname: 'Галлант',
-        photo:
-          'https://i2.mybook.io/p/x756/book_covers/1a/4a/1a4aad47-5f95-4dc5-bdbd-3499c3d12e27.jpg',
-        album_id: 7,
+        photoname: "Work",
+        photo: "/img/work/mina-rad-IPvt-2u-joI-unsplash.jpg",
+        album_id: 5,
       },
     ];
     const addTimeStamps = (item) => ({

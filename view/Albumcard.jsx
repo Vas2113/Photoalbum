@@ -2,6 +2,7 @@ const React = require('react');
 // const Layout = require('./Layout');
 
 function Albumcard({ album }) {
+  console.log(album, '==================================')
   return (
 
     <div className="albCard">
