@@ -66,6 +66,6 @@ router.post('/createAlbum', async (req, res) => {
   const id = req.session.user_id;
   const album = await Album.create({ title: namenewalbum, status: true, user_id: id });
   // console.log(album);
-  res.text(MyAlbumcard({ album }));
+  res.renderComponent(MyAlbumcard, ({ album }));
 });
 module.exports = router;

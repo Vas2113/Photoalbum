@@ -4,31 +4,31 @@ module.exports = {
     const albums = [
       {
         title: 'Animals',
-        body: '',
+        // body: '',
         status: true,
         user_id: 1,
       },
       {
         title: 'Food',
-        body: 'А тут?',
+        // body: 'А тут?',
         status: true,
         user_id: 1,
       },
       {
         title: 'People',
-        body: '',
+        // body: '',
         status: true,
         user_id: 1,
       },
       {
         title: 'Travel',
-        body: '',
+        // body: '',
         status: true,
         user_id: 2,
       },
       {
         title: 'Work',
-        body: '',
+        // body: '',
         status: true,
         user_id: 2,
       },

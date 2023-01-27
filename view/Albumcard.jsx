@@ -6,7 +6,7 @@ function Albumcard({ album }) {
 
     <div className="albCard">
       <a href={`main/photos/${album.id}`}>
-        {album.Photos[0]?.photo ? (
+        {(album.Photos && album.Photos[0]?.photo) ? (
           <img data-id={album.id} className="albumPhoto" src={`${album.Photos[0].photo}`} alt="logo" />) : (
             <img data-id={album.id} className="albumPhoto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTg1Gzi_wvEjSR8BncKB-He8IKCqzS_lqChdqELcCbzA&s" alt="logo" />)}
         <h6>

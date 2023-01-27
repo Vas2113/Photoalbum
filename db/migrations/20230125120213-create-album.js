@@ -12,9 +12,9 @@ module.exports = {
       title: {
         type: Sequelize.TEXT,
       },
-      body: {
-        type: Sequelize.TEXT,
-      },
+      // body: {
+      //   type: Sequelize.TEXT,
+      // },
       status: {
         type: Sequelize.BOOLEAN,
       },
