@@ -3,7 +3,6 @@ const Main = require('../view/Main');
 const Photos = require('../view/Photos');
 
 const { User, Album, Photo } = require('../db/models');
-const ALLPhotos = require('../view/ALLPhotos');
 
 router.get('/', async (req, res) => {
   try {
