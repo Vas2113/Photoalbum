@@ -10,6 +10,9 @@ function myAlbumcard({ album }) {
           {album.title}
         </h6>
       </a>
+      <div>
+        <a href={`/photo/${album.id}`} className="delete" data-id={album.id}>delete</a>
+      </div>
     </div>
 
   );
