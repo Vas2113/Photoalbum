@@ -1,7 +1,7 @@
 {
   "development": {
-    "username": "Vas",
-    "password": "VasVas",
+    "username": "tema",
+    "password": "7725",
     "database": "photoalbum",
     "host": "127.0.0.1",
     "dialect": "postgres"

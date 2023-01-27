@@ -5,7 +5,9 @@ function myAlbumcard({ album }) {
   return (
     <div className="albCard">
       <a href={`/myAlbums/photos/${album.id}`}>
-        <img data-id={album.id} className="albumPhoto" src={`${album.Photos[0].photo}`} alt="logo" />
+        {album?.Photos[0]?.photo ? (
+          <img data-id={album.id} className="albumPhoto" src={`${album.Photos[0].photo}`} alt="logo" />) : (
+            <img data-id={album.id} className="albumPhoto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTg1Gzi_wvEjSR8BncKB-He8IKCqzS_lqChdqELcCbzA&s" alt="logo" />)}
         <h6>
           {album.title}
         </h6>

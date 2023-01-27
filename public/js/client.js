@@ -2,7 +2,8 @@
 const regForm = document.querySelector('#regForm');
 const logForm = document.querySelector('#loginForm');
 const addPhoto = document.querySelector('.addPhoto');
-
+const formaddalbum = document.querySelector('.addformalbum');
+// console.log(formaddalbum);
 if (regForm) {
   regForm.addEventListener('submit', async (e) => {
     e.preventDefault();
@@ -84,3 +85,23 @@ if (addPhoto) {
     });
   });
 }
+
+formaddalbum.addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const { namenewalbum } = e.target;
+  const res = await fetch('/myAlbums/createAlbum', {
+    method: 'POST',
+
+    headers: {
+      'Content-Type': 'Application/json',
+    },
+    body: JSON.stringify({
+      namenewalbum: namenewalbum.value,
+    }),
+  });
+  const data = await res.text();
+console.log(data);
+  const sobaka = document.querySelector('.allAlbums');
+  sobaka.innerHTML = data;
+  // console.log(sobaka);
+});
