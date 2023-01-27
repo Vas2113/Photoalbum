@@ -56,4 +56,7 @@ router.post('/:id/photos/addPhoto', async (req, res) => {
   } catch (e) { console.log(e.message); }
 });
 
+router.get('/createAlbum', (req, res) => {
+  res.send('new album');
+});
 module.exports = router;
